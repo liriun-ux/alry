@@ -6,6 +6,7 @@ import ResTiktok from "./resume/tiktok";
 import ResFacebook from "./resume/facebook";
 import ResGoogle from "./resume/google";
 import ResAgentIa from "./resume/agent-ia";
+import ResSiteWeb from "./resume/site-web";
 
 export default function Home() {
   return (
@@ -36,8 +37,8 @@ export default function Home() {
           <ResAgentIa/>
         </Section>
 
-        <Section id="social-proof">
-          <h2>Prueba social</h2>
+        <Section id="resumen-site-web">
+          <ResSiteWeb/>
         </Section>
 
         <Section id="cta">

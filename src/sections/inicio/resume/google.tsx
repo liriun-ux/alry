@@ -1,6 +1,8 @@
 
 import Image from "next/image";
 
+import ButtonVerMas from "@/components/button-ver-mas";
+import Resdescription from "@/components/res-description";
 export default function ResGoogle() {
   return (
     <section className="res-google">
@@ -23,23 +25,8 @@ export default function ResGoogle() {
           </span>
 
         </h1>
-
-        {/* DESCRIPCIÓN */}
-        <p className="res-google--description sans">
-          Descubre nuestro contenido, proyectos y novedades
-          en Facebook.
-          Descubre nuestro contenido, proyectos y novedades
-          en Facebook.
-          Descubre nuestro contenido, proyectos y novedades
-          en Facebook.
-        </p>
-
-
-        {/* BOTÓN */}
-        <button className="res-google--button">
-          Aprender más
-        </button>
-
+        <Resdescription/>
+        <ButtonVerMas/>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import ButtonVerMas from "@/components/button-ver-mas";
+import Resdescription from "@/components/res-description";
 export default function ResTiktok() {
   return (
     <section className="res-tiktok">
@@ -25,17 +26,8 @@ export default function ResTiktok() {
         {/* PARTE DERECHA */}
         <div className="res-tiktok--right">
 
-          <p className="res-tiktok--description sans">
-            Descubre nuestro contenido, proyectos y novedades
-            Descubre nuestro contenido, proyectos y novedades
-            Descubre nuestro contenido, proyectos y novedades
-            Descubre nuestro contenido, proyectos y novedades
-            en TikTok.
-          </p>
-
-          <button className="res-tiktok--button">
-            Aprender más
-          </button>
+            <Resdescription/>
+            <ButtonVerMas/>
 
         </div>
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import ButtonVerMas from "@/components/button-ver-mas";
+import Resdescription from "@/components/res-description";
 export default function ResYoutube() {
   return (
     <section className="res-youtube">
@@ -19,16 +20,9 @@ export default function ResYoutube() {
           </span>
         </h1>
 
-        <p className="res-youtube--description sans">
-          Descubre nuestro contenido, proyectos y novedades en YouTube.
-          Descubre nuestro contenido, proyectos y novedades en YouTube.
-        </p>
+            <Resdescription/>
 
-        <button className="res-youtube--button">
-          
-            Aprender más
-        </button>
-
+            <ButtonVerMas/>
       </div>
     </section>
   );

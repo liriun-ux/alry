@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ButtonVerMas from "@/components/button-ver-mas";
+import Resdescription from "@/components/res-description";
 
 export default function ResAgentIa() {
   return (
@@ -46,22 +48,8 @@ export default function ResAgentIa() {
         {/* PARTE DERECHA */}
         <div className="res-agent-ia--right">
 
-          <p className="res-agent-ia--description sans">
-          e
-            inteligencia artificial capaces de encontrar,
-            analizar y mostrar tu contenido.
-
-            Potencia tu presencia digital con agentes de
-            inteligencia artificial capaces de encontrar,
-            analizar y mostrar tu contenido.
-            Potencia tu presencia digital con agentes de
-            inteligencia artificial capaces de encontrar,
-            analizar y mostrar tu contenido.
-          </p>
-
-          <button className="res-agent-ia--button">
-            Aprender más
-          </button>
+            <Resdescription text="Descubre nuestro contenido, proyectos y novedades          en hello.          Descubre nuestro contenido, proyectos y novedades          en Facebook.          Descubre nuestro contenido, proyectos y novedades agentIA"/>
+            <ButtonVerMas/>
 
         </div>
 

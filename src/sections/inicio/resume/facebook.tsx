@@ -1,19 +1,12 @@
 import Image from "next/image";
-
+import ButtonVerMas from "@/components/button-ver-mas";
+import Resdescription from "@/components/res-description";
 export default function ResFacebook() {
   return (
     <section className="res-facebook">
       <div className="res-facebook--content">
 
-        {/* DESCRIPCIÓN */}
-        <p className="res-facebook--description sans">
-          Descubre nuestro contenido, proyectos y novedades
-          en Facebook.
-          Descubre nuestro contenido, proyectos y novedades
-          en Facebook.
-          Descubre nuestro contenido, proyectos y novedades
-          en Facebook.
-        </p>
+            <Resdescription/>
 
         {/* ICONO + TÍTULO */}
         <h1 className="res-facebook--title display">
@@ -32,10 +25,7 @@ export default function ResFacebook() {
 
         </h1>
 
-        {/* BOTÓN */}
-        <button className="res-facebook--button">
-          Aprender más
-        </button>
+            <ButtonVerMas/>
 
       </div>
     </section>
