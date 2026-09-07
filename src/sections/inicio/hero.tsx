@@ -7,8 +7,9 @@ export default function Hero() {
 
 
         <h1 className="hero__title display">
-          CONSIGUE MAS
-          <span className=" italic">VISTAS </span>
+          
+          <span className="">CONSIGUE MAS</span>
+          <span className="AcentHero italic">VISTAS </span>
         </h1>
 
       </div>

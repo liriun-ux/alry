@@ -5,7 +5,7 @@ export default function Header() {
     <header className="header">
       <Modal/>
       <div className="logo display">
-        AL<span className="text-[#ff0000]">RY</span>
+        AL<span className="logo-acent">RY</span>
       </div>
     </header>
   );

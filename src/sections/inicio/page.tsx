@@ -1,34 +1,39 @@
 import Header from "@/components/header";
 import Section from "@/components/Section";
 import Hero from "./hero";
+import ResYoutube from "./resume/youtube";
+import ResTiktok from "./resume/tiktok";
+import ResFacebook from "./resume/facebook";
+import ResGoogle from "./resume/google";
+import ResAgentIa from "./resume/agent-ia";
 
 export default function Home() {
   return (
     <>
     <Header/>
-      <main>
+      <main className="PageIncio">
         <Section id="hero">
           <Hero/>
         </Section>
 
-        <Section id="problem">
-          <h2>Problema</h2>
+        <Section id="resumen-youtube">
+          <ResYoutube/>
         </Section>
 
-        <Section id="value">
-          <h2>Propuesta de valor</h2>
+        <Section id="resume-tiktok">
+            <ResTiktok/>
         </Section>
 
-        <Section id="product">
-          <h2>Producto</h2>
+        <Section id="resumen-facebook">
+          <ResFacebook/>
         </Section>
 
-        <Section id="benefits">
-          <h2>Beneficios</h2>
+        <Section id="resumen-google">
+          <ResGoogle/>
         </Section>
 
-        <Section id="how-it-works">
-          <h2>Cómo funciona</h2>
+        <Section id="resumen-agente-ia">
+          <ResAgentIa/>
         </Section>
 
         <Section id="social-proof">
