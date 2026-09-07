@@ -7,6 +7,7 @@ import ResFacebook from "./resume/facebook";
 import ResGoogle from "./resume/google";
 import ResAgentIa from "./resume/agent-ia";
 import ResSiteWeb from "./resume/site-web";
+import NavBase from "@/components/nav-base";
 
 export default function Home() {
   return (
@@ -41,8 +42,8 @@ export default function Home() {
           <ResSiteWeb/>
         </Section>
 
-        <Section id="cta">
-          <h2>CTA</h2>
+        <Section id="navegacion">
+          <NavBase/>
         </Section>
       </main>
 

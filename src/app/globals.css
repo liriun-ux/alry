@@ -332,7 +332,7 @@ body {
   opacity: 1;
   pointer-events: auto;
 
-  background: color-mix(in srgb, var(--color-bg) 10%, transparent);
+  background: color-mix(in srgb, var(--color-bg) 60%, transparent);
   z-index: 900;
   backdrop-filter: blur(10px);
 }
@@ -355,10 +355,9 @@ body {
 
 
 .modal-content {
-  padding: 40px;
+  padding: clamp(0.2rem, 1.5vw, 1.25rem);
   border-radius: 20px;
 }
-
 /* WARNING: PAGE INICIO */
 .PageIncio{
   height: 100vh;
@@ -1212,3 +1211,199 @@ body {
     width: 80%;
   }
 }
+
+/* WARNING: BASE NAVEGACION*/
+
+
+.nav-base {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    bottom: -10vh;
+    position: relative;
+    padding: 1rem;
+}
+
+.nav-base--content {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "izq der"
+    "abajo abajo";
+  align-items: center;
+  gap: 1rem;
+}
+
+
+/* =========================
+   PARTE IZQUIERDA
+========================= */
+
+.nav-base--left {
+  grid-area: izq;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.nav-base--left a {
+    width: 60%;
+}
+.nav-base--left .res-base--button{
+    width: 100%;
+}
+/* =========================
+   PARTE DERECHA
+========================= */
+
+.nav-base--right {
+    grid-area: der;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: start;
+
+  padding: 2rem;
+
+  @media (max-width: 768px) {
+  margin-top: 0;
+  }
+}
+.nav-base--right .res-base--button{
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+.nav-base--right .res-base--button:hover{
+    background: var(--color-primary-dark);
+    color: var(--color-bg);
+}
+
+.nav-base--right .res-base--button:active{
+    background: var(--color-primary-dark);
+    color: var(--color-bg);
+}
+.nav-base-section-button.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+.nav-base-section-button.active:hover {
+  background: var(--color-bg);
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+.nav-base-section-button.active:active {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+/* footer*/
+.nav-base--footer{
+    grid-area: abajo;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+    border: 1px solid var(--color-accent-lu);
+    border-radius: 10px;
+    padding-inline: 0.8rem;
+    padding-block: 0.7rem;
+
+    background: var(--color-accent);
+    color: var(--color-primary);
+    white-space: nowrap;
+
+}
+.nav-base--icons{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    right: -1.5vw;
+    position: relative;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .nav-base--content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "izq"
+      "der"
+      "abajo";
+  }
+
+  .nav-base--left {
+    padding: 0;
+  }
+
+  .nav-base--right {
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    border-left: none;
+  }
+  .nav-base-section-button{
+        padding: 0.4rem 0rem;
+        margin-top: 0.3rem;
+      font-size: 0.9rem;
+  }
+  .nav-base--right .res-base--button{
+        padding: 0.4rem 1rem;
+        margin-top: 0.3rem;
+      font-size: 0.9rem;
+  }
+  .nav-base--right .res-base--description{
+      margin: 0 0 1rem;
+  }
+
+  .nav-base--footer{
+      margin: 0;
+      font-size: 0.7rem;
+      justify-content: space-around;
+  }
+
+    .nav-base--icon{
+        width: clamp(1.5rem, 3vw, 3rem);
+        height: auto;
+        margin-left: 1vw;
+    }
+}
+
+
+.nav-base--create-movil{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .nav-base--reserve{
+        display: none;
+    }
+    .nav-base--create{
+        display: none;
+    }
+    .nav-base--create-movil{
+    
+        display: flex;
+    }
+    .nav-base--icons{
+        right: 0;
+    }
+    .nav-base {
+        bottom:-2vh;
+    }
+}
+

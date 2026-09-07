@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import NavBase from "./nav-base";
 
 export default function Modal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +17,7 @@ export default function Modal() {
         <div className="modal">
           
           <div className="modal-content">
-            <h2>Mi contenido</h2>
-            <p>
-              Este contenido aparece después del efecto de entrada.
-            </p>
-
+            <NavBase/>
           </div>
 
         </div>
