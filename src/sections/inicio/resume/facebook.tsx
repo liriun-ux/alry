@@ -6,7 +6,7 @@ export default function ResFacebook() {
     <section className="res-facebook">
       <div className="res-facebook--content">
 
-            <Resdescription/>
+            <Resdescription text="No todos los 'me gusta' valen lo mismo para Facebook, y muchas marcas cometen errores que reducen su alcance sin saberlo. Descubre qué está premiando (y qué está castigando) el algoritmo hoy."/>
 
         {/* ICONO + TÍTULO */}
         <h1 className="res-facebook--title display">
@@ -25,7 +25,7 @@ export default function ResFacebook() {
 
         </h1>
 
-            <ButtonVerMas/>
+            <ButtonVerMas href="/facebook"/>
 
       </div>
     </section>

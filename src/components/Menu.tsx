@@ -23,8 +23,8 @@ export default function Modal() {
         </div>
       </div>
       <span className={`closeIcon ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(false)}>
-      <span></span>
-      <span></span>
+          <span></span>
+          <span></span>
     </span>
 
     </>

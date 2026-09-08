@@ -48,8 +48,8 @@ export default function ResAgentIa() {
         {/* PARTE DERECHA */}
         <div className="res-agent-ia--right">
 
-            <Resdescription text="Descubre nuestro contenido, proyectos y novedades          en hello.          Descubre nuestro contenido, proyectos y novedades          en Facebook.          Descubre nuestro contenido, proyectos y novedades agentIA"/>
-            <ButtonVerMas/>
+            <Resdescription text="Cada vez más personas ya no buscan en Google, le preguntan directamente a una IA. Y esa IA está recomendando negocios ahora mismo, aunque el tuyo tal vez ni siquiera figure en su radar. Descubre cómo cambiar eso."/>
+            <ButtonVerMas href="/agente-ia"/>
 
         </div>
 

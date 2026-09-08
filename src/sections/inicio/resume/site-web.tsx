@@ -1,4 +1,5 @@
 import ButtonVerMas from "@/components/button-ver-mas";
+import Description from "@/components/description";
 import Resdescription from "@/components/res-description";
 
 export default function ResSiteWeb() {
@@ -36,8 +37,23 @@ export default function ResSiteWeb() {
         <div className="res-siteweb--right">
 
 
-            <Resdescription/>
-            <ButtonVerMas/>
+            <Description
+            className="res-base--description"
+  text="Imagina un letrero que muestra tus productos, precios y contacto las 24 horas, incluso mientras duermes. Eso es exactamente lo que puede hacer por tu marca un sitio web bien construido. Descubre todo lo que puede hacer por ti."
+  highlights={[
+    {
+      text: "sitio web",
+    },
+    {
+      text: "24 horas",
+    },
+    {
+      text: "letrero",
+    },
+  ]}
+/>
+
+            <ButtonVerMas href="sitio-web"/>
         </div>
 
       </div>

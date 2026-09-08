@@ -26,8 +26,8 @@ export default function ResTiktok() {
         {/* PARTE DERECHA */}
         <div className="res-tiktok--right">
 
-            <Resdescription/>
-            <ButtonVerMas/>
+            <Resdescription text="En TikTok, tus primeros 3 segundos valen más que todo el resto del video junto. Conoce las señales exactas que el algoritmo evalúa para decidir si tu contenido explota o desaparece en silencio."/>
+            <ButtonVerMas href="/tiktok"/>
 
         </div>
 

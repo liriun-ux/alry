@@ -20,9 +20,9 @@ export default function ResYoutube() {
           </span>
         </h1>
 
-            <Resdescription/>
+            <Resdescription text="Hay un algoritmo decidiendo en segundos si tu video merece ser visto por miles o quedar enterrado. Descubre qué mira realmente YouTube antes de recomendar un video, y cómo estar del lado correcto de esa decisión."/>
 
-            <ButtonVerMas/>
+            <ButtonVerMas href="/youtube"/>
       </div>
     </section>
   );

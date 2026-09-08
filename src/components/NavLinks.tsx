@@ -15,9 +15,9 @@ export default function NavLinks() {
         </div>
       </Link>
 
-      <Link href="/facebook">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/facebook" ? "active" : ""}`}>
-          facebook
+      <Link href="/youtube">
+        <div className={`res-base--button nav-base-section-button ${pathname === "/youtube" ? "active" : ""}`}>
+          youtube
         </div>
       </Link>
 
@@ -27,15 +27,21 @@ export default function NavLinks() {
         </div>
       </Link>
 
-      <Link href="/youtube">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/youtube" ? "active" : ""}`}>
-          youtube
+      <Link href="/facebook">
+        <div className={`res-base--button nav-base-section-button ${pathname === "/facebook" ? "active" : ""}`}>
+          facebook
         </div>
       </Link>
 
       <Link href="/google">
         <div className={`res-base--button nav-base-section-button ${pathname === "/google" ? "active" : ""}`}>
           google
+        </div>
+      </Link>
+
+      <Link href="/agente-ia">
+        <div className={`res-base--button nav-base-section-button ${pathname === "/agente-ia" ? "active" : ""}`}>
+          agente ia
         </div>
       </Link>
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Resdescription from "./res-description";
 import ButtonVerMas from "./button-ver-mas";
 import NavLinks from "./NavLinks";
+import Description from "./description";
 
 export default function NavBase() {
   return (
@@ -14,8 +15,16 @@ export default function NavBase() {
 
         {/* PARTE DERECHA */}
         <div className="nav-base--right">
-            <Resdescription/>
-            <ButtonVerMas/>
+            <Description
+            className="res-base--description"
+  text="Un sitio web bien diseñado es la base de todo lo que viste aquí: SEO, IA, redes sociales y más. Descubre cómo LIRIUN-UX puede construir esa base sólida para tu marca."
+  highlights={[
+    { text: "sitio web",},
+    { text: "LIRIUN-UX",},  
+  ]}
+/>
+            <ButtonVerMas title="Visitar LIRIUN-UX" href="https://www.liriun-ux.tecnologia.bo"/>
+
         </div>
         {/* PARTE Footer */}
         <div className="nav-base--footer">
@@ -24,42 +33,42 @@ export default function NavBase() {
             <div className="nav-base--icons">
 
   <a
-    href="https://chatgpt.com/"
+    href="https://facebook"
     target="_blank"
     rel="noopener noreferrer"
   >
     <Image
       className="nav-base--icon"
-      src="/img/openai.svg"
-      alt="OpenAI"
+      src="/img/facebookDark.svg"
+      alt="facebook"
       width={30}
       height={30}
     />
   </a>
 
   <a
-    href="https://claude.ai/"
+    href="https://tiktok/"
     target="_blank"
     rel="noopener noreferrer"
   >
     <Image
       className="nav-base--icon"
-      src="/img/claude.svg"
-      alt="Claude"
+      src="/img/tiktok.svg"
+      alt="tiktok"
       width={30}
       height={30}
     />
   </a>
 
   <a
-    href="https://gemini.google.com/"
+    href="https://www.liriun-ux.tecnologia.bo"
     target="_blank"
     rel="noopener noreferrer"
   >
     <Image
       className="nav-base--icon"
-      src="/img/gemini.svg"
-      alt="Gemini"
+      src="/img/web-icon.svg"
+      alt="site-web"
       width={30}
       height={30}
     />

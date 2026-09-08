@@ -25,8 +25,8 @@ export default function ResGoogle() {
           </span>
 
         </h1>
-        <Resdescription/>
-        <ButtonVerMas/>
+        <Resdescription text="Ahora mismo, alguien está buscando exactamente lo que tú ofreces. La pregunta es si tu negocio aparece o si esa búsqueda termina en la competencia. Descubre cuánto puede cambiar tu negocio con solo ser encontrado."/>
+        <ButtonVerMas href="/google"/>
       </div>
     </section>
   );
