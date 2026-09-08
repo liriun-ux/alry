@@ -16,29 +16,97 @@ export const metadata: Metadata = {
 export default function GooglePage() {
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'Por qué tu negocio necesita aparecer en Google',
-  description: 'Razones por las que la presencia en Google Business Profile y el SEO son clave para captar clientes.',
-  publisher: { '@type': 'Organization', name: 'LIRIUN-UX' },
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Tu cliente ya te está buscando' },
-      { '@type': 'ListItem', position: 2, name: 'La confianza se construye antes del contacto' },
-      { '@type': 'ListItem', position: 3, name: 'Ficha de Google Business gratuita' },
-      { '@type': 'ListItem', position: 4, name: 'Perder frente a la competencia sin competir' },
-      { '@type': 'ListItem', position: 5, name: 'El SEO como inversión a largo plazo' },
 
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': 'https://alry.vercel.app/google#article',
 
-      { '@type': 'ListItem', position: 6, name: 'Credibilidad frente a negocios informales o sin regularizar' },
-      { '@type': 'ListItem', position: 7, name: 'Reseñas: el boca a boca digital que trabaja 24/7' },
-      { '@type': 'ListItem', position: 8, name: 'Alcanzar clientes fuera del círculo de contactos conocidos' },
-      { '@type': 'ListItem', position: 9, name: 'Un sitio web propio, un activo que no depende de terceros' },
-      { '@type': 'ListItem', position: 10, name: 'Mi negocio funciona por recomendación no es una razón para no crecer' },
-      { '@type': 'ListItem', position: 11, name: 'El costo real no es invertir en SEO, es la oportunidad perdida' },
-    ],
-  },
-}
+      headline: 'Consigue más vistas en Google.',
+
+      description:
+        'Guía para mejorar la visibilidad de un negocio en Google mediante SEO, Google Business Profile, reseñas, presencia web y posicionamiento en los resultados de búsqueda.',
+
+      url: 'https://alry.vercel.app/google',
+
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://alry.vercel.app/google#webpage',
+      },
+
+      author: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      inLanguage: 'es-BO',
+
+      articleSection: 'Google',
+
+      keywords: [
+        'Google',
+        'visibilidad en Google',
+        'SEO',
+        'posicionamiento en Google',
+        'Google Business Profile',
+        'Google Maps',
+        'reseñas de Google',
+        'presencia digital',
+        'clientes desde Google',
+      ],
+    },
+
+    {
+      '@type': 'WebPage',
+      '@id': 'https://alry.vercel.app/google#webpage',
+
+      url: 'https://alry.vercel.app/google',
+
+      name: 'Consigue mas vistas en: Google. | ALRY',
+
+      description:
+        'Guía para mejorar la visibilidad y conseguir más clientes mediante Google.',
+
+      isPartOf: {
+        '@id': 'https://alry.vercel.app/#website',
+      },
+
+      about: {
+        '@type': 'Thing',
+        name: 'Google',
+      },
+
+      inLanguage: 'es-BO',
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://alry.vercel.app/google#breadcrumb',
+
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: 'https://alry.vercel.app/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Google',
+          item: 'https://alry.vercel.app/google',
+        },
+      ],
+    },
+  ],
+};
 
 const items = [
   {

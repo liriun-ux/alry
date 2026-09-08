@@ -16,27 +16,99 @@ export const metadata: Metadata = {
 export default function AgenteIAPage() {
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'AEO: cómo lograr que la IA recomiende tu negocio',
-  description: 'Qué es el AEO (Answer Engine Optimization) y cómo estructurar tu información para que las IAs te recomienden.',
-  publisher: { '@type': 'Organization', name: 'LIRIUN-UX' },
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Los agentes de IA ya recomiendan negocios' },
-      { '@type': 'ListItem', position: 2, name: 'AEO: el nuevo SEO, pero para inteligencias artificiales' },
-      { '@type': 'ListItem', position: 3, name: 'Los precios y datos deben estar donde la IA los pueda leer' },
-      { '@type': 'ListItem', position: 4, name: 'La coherencia de marca en todos lados importa' },
-      { '@type': 'ListItem', position: 5, name: 'Las reseñas alimentan directamente a la IA' },
-      { '@type': 'ListItem', position: 6, name: 'Ser la fuente citada, no solo un resultado más' },
-      { '@type': 'ListItem', position: 7, name: 'Contenido claro y directo, la nueva moneda de confianza' },
-      { '@type': 'ListItem', position: 8, name: 'Quedar fuera de las respuestas de IA es quedar fuera del futuro' },
-      { '@type': 'ListItem', position: 9, name: 'Una respuesta de IA puede valer más que diez anuncios' },
-      { '@type': 'ListItem', position: 10, name: 'Los early movers tienen una ventaja temporal enorme' },
-      { '@type': 'ListItem', position: 11, name: 'No se trata de estar en todos lados, sino de ser encontrado' },
-    ],
-  },
-}
+
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': 'https://alry.vercel.app/agente-ia#article',
+
+      headline: 'Consigue más vistas en Agentes de IA.',
+
+      description:
+        'Guía para mejorar la visibilidad de una marca en agentes de inteligencia artificial mediante AEO, información clara y estructurada, coherencia de marca, reseñas y contenido confiable.',
+
+      url: 'https://alry.vercel.app/agente-ia',
+
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://alry.vercel.app/agente-ia#webpage',
+      },
+
+      author: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      inLanguage: 'es-BO',
+
+      articleSection: 'Agentes de IA',
+
+      keywords: [
+        'agentes de IA',
+        'AEO',
+        'Answer Engine Optimization',
+        'visibilidad en inteligencia artificial',
+        'SEO para IA',
+        'IA',
+        'ChatGPT',
+        'Gemini',
+        'Copilot',
+        'búsqueda con IA',
+        'recomendaciones de IA',
+      ],
+    },
+
+    {
+      '@type': 'WebPage',
+      '@id': 'https://alry.vercel.app/agente-ia#webpage',
+
+      url: 'https://alry.vercel.app/agente-ia',
+
+      name: 'Consigue mas vistas en: Agentes de IA. | ALRY',
+
+      description:
+        'Guía para mejorar la visibilidad de una marca en agentes de inteligencia artificial.',
+
+      isPartOf: {
+        '@id': 'https://alry.vercel.app/#website',
+      },
+
+      about: {
+        '@type': 'Thing',
+        name: 'Agentes de inteligencia artificial',
+      },
+
+      inLanguage: 'es-BO',
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://alry.vercel.app/agente-ia#breadcrumb',
+
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: 'https://alry.vercel.app/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Agentes de IA',
+          item: 'https://alry.vercel.app/agente-ia',
+        },
+      ],
+    },
+  ],
+};
 
 const items = [
   {

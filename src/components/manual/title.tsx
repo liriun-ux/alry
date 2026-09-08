@@ -5,7 +5,7 @@ interface ManualTitleProps {
 }
 
 export default function ManualTitle({
-  title = "Consigue mas vistas en:",
+  title = "Consigue más vistas en",
   wordAcent ="",
   className = "",
 }: ManualTitleProps) {

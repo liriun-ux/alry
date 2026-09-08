@@ -15,27 +15,99 @@ export const metadata: Metadata = {
 export default function SitioWebPage() {
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'Por qué tu negocio necesita un sitio web propio',
-  description: 'Un sitio web es la base para ser encontrado por Google, recomendado por IA y percibido como un negocio serio.',
-  publisher: { '@type': 'Organization', name: 'LIRIUN-UX' },
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Tu vitrina que nunca cierra' },
-      { '@type': 'ListItem', position: 2, name: 'La diferencia entre existir y ser encontrado' },
-      { '@type': 'ListItem', position: 3, name: 'Un solo lugar con toda la información, siempre actualizada' },
-      { '@type': 'ListItem', position: 4, name: 'La puerta de entrada que Google necesita para recomendarte' },
-      { '@type': 'ListItem', position: 5, name: 'El pasaporte para ser recomendado por la IA' },
-      { '@type': 'ListItem', position: 6, name: 'Un activo que te pertenece, no que alquilas' },
-      { '@type': 'ListItem', position: 7, name: 'La primera impresión antes de cualquier contacto humano' },
-      { '@type': 'ListItem', position: 8, name: 'Contacto siempre a la vista' },
-      { '@type': 'ListItem', position: 9, name: 'Mostrar el catálogo completo sin límite de espacio' },
-      { '@type': 'ListItem', position: 10, name: 'Construir una reputación que se puede mostrar' },
-      { '@type': 'ListItem', position: 11, name: 'El punto de encuentro entre todos tus canales' },
-    ],
-  },
-}
+
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': 'https://alry.vercel.app/sitio-web#article',
+
+      headline: 'Consigue más vistas en Tu Sitio Web.',
+
+      description:
+        'Guía sobre por qué un sitio web bien diseñado es la base de la presencia digital de un negocio y cómo ayuda con Google, SEO, redes sociales e inteligencia artificial.',
+
+      url: 'https://alry.vercel.app/sitio-web',
+
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://alry.vercel.app/sitio-web#webpage',
+      },
+
+      author: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      inLanguage: 'es-BO',
+
+      articleSection: 'Sitio Web',
+
+      keywords: [
+        'sitio web',
+        'página web',
+        'presencia digital',
+        'SEO',
+        'Google',
+        'inteligencia artificial',
+        'AEO',
+        'visibilidad online',
+        'diseño web',
+        'desarrollo web',
+        'sitio web para empresas',
+      ],
+    },
+
+    {
+      '@type': 'WebPage',
+      '@id': 'https://alry.vercel.app/sitio-web#webpage',
+
+      url: 'https://alry.vercel.app/sitio-web',
+
+      name: 'Consigue más vistas en: Tu Sitio Web. | ALRY',
+
+      description:
+        'Guía sobre cómo un sitio web bien diseñado ayuda a mejorar la presencia digital de un negocio en Google, redes sociales e inteligencia artificial.',
+
+      isPartOf: {
+        '@id': 'https://alry.vercel.app/#website',
+      },
+
+      about: {
+        '@type': 'Thing',
+        name: 'Sitio web',
+      },
+
+      inLanguage: 'es-BO',
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://alry.vercel.app/sitio-web#breadcrumb',
+
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: 'https://alry.vercel.app/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Sitio Web',
+          item: 'https://alry.vercel.app/sitio-web',
+        },
+      ],
+    },
+  ],
+};
 
 const items = [
   {

@@ -14,20 +14,92 @@ export const metadata: Metadata = {
 export default function YoutubePage() {
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'Cómo conseguir más vistas en YouTube',
-  description: 'Guía de optimización para el algoritmo de recomendaciones de YouTube.',
-  step: [
-    { '@type': 'HowToStep', name: 'Investigación de palabras clave', text: 'Identificar términos con volumen de búsqueda real y baja competencia.' },
-    { '@type': 'HowToStep', name: 'Optimización del título', text: 'Combinar la keyword principal con un gancho, dentro de 60 caracteres.' },
-    { '@type': 'HowToStep', name: 'Descripción estratégica', text: 'Escribir 200-300 palabras con la keyword en las primeras líneas.' },
-    { '@type': 'HowToStep', name: 'Miniaturas de alto impacto', text: 'Diseñar thumbnails con alto contraste y tipografía legible.' },
-    { '@type': 'HowToStep', name: 'Retención de audiencia', text: 'Estructurar un gancho fuerte en los primeros 15 segundos.' },
-    { '@type': 'HowToStep', name: 'Etiquetas relevantes', text: 'Usar 5 a 8 tags combinando términos amplios y long-tail.' },
-    { '@type': 'HowToStep', name: 'Playlists y estructura', text: 'Organizar videos por temática para aumentar el tiempo por sesión.' },
-    { '@type': 'HowToStep', name: 'Consistencia de publicación', text: 'Mantener un calendario constante de subida.' },
-    { '@type': 'HowToStep', name: 'Interacción y señales sociales', text: 'Fomentar comentarios y respuestas en la primera hora.' },
-    { '@type': 'HowToStep', name: 'Análisis de métricas', text: 'Revisar CTR, retención y fuentes de tráfico en YouTube Studio.' },
+
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': 'https://alry.vercel.app/youtube#article',
+
+      headline: 'Consigue más vistas en YouTube.',
+
+      description:
+        'Guía para mejorar la visibilidad de tus videos en YouTube mediante palabras clave, títulos, miniaturas, retención de audiencia, estructura y análisis de métricas.',
+
+      url: 'https://alry.vercel.app/youtube',
+
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://alry.vercel.app/youtube#webpage',
+      },
+
+      author: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      inLanguage: 'es-BO',
+
+      articleSection: 'YouTube',
+
+      keywords: [
+        'YouTube',
+        'más vistas en YouTube',
+        'SEO para YouTube',
+        'algoritmo de YouTube',
+        'visibilidad en YouTube',
+        'optimización de YouTube',
+      ],
+    },
+
+    {
+      '@type': 'WebPage',
+      '@id': 'https://alry.vercel.app/youtube#webpage',
+
+      url: 'https://alry.vercel.app/youtube',
+
+      name: 'Consigue más vistas en YouTube | ALRY',
+
+      description:
+        'Guía para mejorar la visibilidad y conseguir más vistas en YouTube.',
+
+      isPartOf: {
+        '@id': 'https://alry.vercel.app/#website',
+      },
+
+      about: {
+        '@type': 'Thing',
+        name: 'YouTube',
+      },
+
+      inLanguage: 'es-BO',
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://alry.vercel.app/youtube#breadcrumb',
+
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: 'https://alry.vercel.app/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'YouTube',
+          item: 'https://alry.vercel.app/youtube',
+        },
+      ],
+    },
   ],
 }
 

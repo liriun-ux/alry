@@ -15,24 +15,96 @@ export const metadata: Metadata = {
 export default function FacebookPage() {
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'Cómo aumentar tu alcance en Facebook',
-  description: 'Guía de optimización para el algoritmo de Facebook e interacciones significativas.',
-  step: [
-    { '@type': 'HowToStep', name: 'Tiempo de permanencia', text: 'Diseñar publicaciones que inviten a detenerse a leer o mirar.' },
-    { '@type': 'HowToStep', name: 'Interacciones significativas', text: 'Priorizar comentarios reales y conversación sobre likes pasivos.' },
-    { '@type': 'HowToStep', name: 'Video nativo y Reels', text: 'Subir video directo a la plataforma, priorizando el formato Reels.' },
-    { '@type': 'HowToStep', name: 'Evitar el engagement bait', text: 'No usar tácticas artificiales tipo "etiqueta a 5 amigos".' },
-    { '@type': 'HowToStep', name: 'Frecuencia y consistencia', text: 'Mantener un calendario regular sin saturar ni desaparecer.' },
-    { '@type': 'HowToStep', name: 'Retener usuarios dentro de la plataforma', text: 'Reducir enlaces externos directos en el cuerpo de la publicación.' },
-    { '@type': 'HowToStep', name: 'Relevancia por audiencia', text: 'Segmentar tono y temática según el historial de interacción.' },
-    { '@type': 'HowToStep', name: 'Velocidad de reacción inicial', text: 'Generar interacción en los primeros 30-60 minutos tras publicar.' },
-    { '@type': 'HowToStep', name: 'Uso de grupos de Facebook', text: 'Complementar la página con presencia en grupos relevantes del nicho.' },
-    { '@type': 'HowToStep', name: 'Calidad visual para feed móvil', text: 'Optimizar dimensiones para el feed móvil, mayoría del tráfico.' },
-    { '@type': 'HowToStep', name: 'Evitar señales negativas', text: 'Minimizar "ocultar publicación" y marcas de spam.' },
-    { '@type': 'HowToStep', name: 'Análisis en Meta Business Suite', text: 'Monitorear alcance, interacción y retención de video.' },
+
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': 'https://alry.vercel.app/facebook#article',
+
+      headline: 'Consigue más vistas en Facebook.',
+
+      description:
+        'Guía para mejorar el alcance de publicaciones en Facebook mediante tiempo de permanencia, interacciones significativas, video nativo, Reels, frecuencia de publicación, relevancia y análisis de métricas.',
+
+      url: 'https://alry.vercel.app/facebook',
+
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://alry.vercel.app/facebook#webpage',
+      },
+
+      author: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      inLanguage: 'es-BO',
+
+      articleSection: 'Facebook',
+
+      keywords: [
+        'Facebook',
+        'más vistas en Facebook',
+        'alcance en Facebook',
+        'algoritmo de Facebook',
+        'SEO para Facebook',
+        'Facebook Reels',
+        'engagement en Facebook',
+        'Meta Business Suite',
+      ],
+    },
+
+    {
+      '@type': 'WebPage',
+      '@id': 'https://alry.vercel.app/facebook#webpage',
+
+      url: 'https://alry.vercel.app/facebook',
+
+      name: 'Cómo conseguir más vistas en Facebook | ALRY',
+
+      description:
+        'Guía para mejorar el alcance y conseguir más vistas en Facebook.',
+
+      isPartOf: {
+        '@id': 'https://alry.vercel.app/#website',
+      },
+
+      about: {
+        '@type': 'Thing',
+        name: 'Facebook',
+      },
+
+      inLanguage: 'es-BO',
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://alry.vercel.app/facebook#breadcrumb',
+
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: 'https://alry.vercel.app/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Facebook',
+          item: 'https://alry.vercel.app/facebook',
+        },
+      ],
+    },
   ],
-}
+};
 
 const items = [
   {

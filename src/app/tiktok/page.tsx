@@ -14,24 +14,96 @@ export const metadata: Metadata = {
 export default function TiktokPage() {
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'Cómo conseguir más vistas en TikTok',
-  description: 'Guía de optimización para el algoritmo de recomendaciones de TikTok.',
-  step: [
-    { '@type': 'HowToStep', name: 'Los primeros 3 segundos', text: 'Captar atención inmediata para evitar el swipe temprano.' },
-    { '@type': 'HowToStep', name: 'Tasa de finalización', text: 'Videos cortos (15-34 seg) que se ven completos o en loop.' },
-    { '@type': 'HowToStep', name: 'Uso estratégico de sonidos', text: 'Audios en tendencia que impulsan el alcance en For You.' },
-    { '@type': 'HowToStep', name: 'Hashtags relevantes y de nicho', text: 'Combinar 3 a 5 hashtags amplios y específicos del nicho.' },
-    { '@type': 'HowToStep', name: 'Interacción temprana', text: 'Publicar en horarios de mayor actividad y fomentar comentarios en la primera hora.' },
-    { '@type': 'HowToStep', name: 'Formato vertical y calidad nativa', text: 'Producir en 9:16 sin marcas de agua de otras plataformas.' },
-    { '@type': 'HowToStep', name: 'Consistencia de publicación', text: 'Mínimo 3 a 5 videos por semana en cuentas en crecimiento.' },
-    { '@type': 'HowToStep', name: 'Texto en pantalla y subtítulos', text: 'Incorporar texto superpuesto para mejorar retención y contexto.' },
-    { '@type': 'HowToStep', name: 'Señales de valor agregado', text: 'Contenido que motive guardados y compartidos por mensaje directo.' },
-    { '@type': 'HowToStep', name: 'Coherencia temática de la cuenta', text: 'Mantener una línea temática clara y reconocible.' },
-    { '@type': 'HowToStep', name: 'Aprovechamiento de tendencias', text: 'Monitorear diariamente sonidos y retos en ascenso.' },
-    { '@type': 'HowToStep', name: 'Análisis en TikTok Studio', text: 'Revisar tiempo de reproducción, alcance y tráfico por hashtag.' },
+
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': 'https://alry.vercel.app/tiktok#article',
+
+      headline: 'Consigue más vistas en Tiktok.',
+
+      description:
+        'Guía para conseguir más vistas en TikTok mediante retención, sonidos, hashtags, interacción, tendencias, frecuencia de publicación y análisis de métricas.',
+
+      url: 'https://alry.vercel.app/tiktok',
+
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://alry.vercel.app/tiktok#webpage',
+      },
+
+      author: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+
+      inLanguage: 'es-BO',
+
+      articleSection: 'TikTok',
+
+      keywords: [
+        'TikTok',
+        'más vistas en TikTok',
+        'algoritmo de TikTok',
+        'SEO para TikTok',
+        'visibilidad en TikTok',
+        'TikTok Analytics',
+        'TikTok Studio',
+        'TikTok trends',
+      ],
+    },
+
+    {
+      '@type': 'WebPage',
+      '@id': 'https://alry.vercel.app/tiktok#webpage',
+
+      url: 'https://alry.vercel.app/tiktok',
+
+      name: 'Consigue mas vistas en: Tiktok. | ALRY',
+
+      description:
+        'Guía para mejorar el alcance y conseguir más vistas en TikTok.',
+
+      isPartOf: {
+        '@id': 'https://alry.vercel.app/#website',
+      },
+
+      about: {
+        '@type': 'Thing',
+        name: 'TikTok',
+      },
+
+      inLanguage: 'es-BO',
+
+      publisher: {
+        '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://alry.vercel.app/tiktok#breadcrumb',
+
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: 'https://alry.vercel.app/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'TikTok',
+          item: 'https://alry.vercel.app/tiktok',
+        },
+      ],
+    },
   ],
-}
+};
 
 const items = [
   {
