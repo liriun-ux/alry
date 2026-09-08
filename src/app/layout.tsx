@@ -48,6 +48,32 @@ export const metadata: Metadata = {
   },
 }
 export default function RootLayout({ children }: LayoutProps<"/">) {
+
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': 'https://www.liriun-ux.tecnologia.bo/#organization',
+  url: 'https://www.liriun-ux.tecnologia.bo',
+  name: 'LIRIUN-UX',
+  logo: 'https://www.liriun-ux.tecnologia.bo/images/LOGOFAVICON.png',
+  description: 'Agencia de diseño y desarrollo web en La Paz/El Alto, Bolivia.',
+  email: 'liriun.ux@gmail.com',
+  subOrganization: { "@id": "https://alry.vercel.app/#organization" }
+}
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://alry.vercel.app/#website',
+  name: 'ALRY',
+  url: 'https://alry.vercel.app',
+  description: 'Instrucciones para mejorar visivilidad en YouTube, TikTok, facebook, google, agentes-ia . Como un sitio web bien hecho ayuda a mejorar la visualizacion',
+  email: 'liriun.ux@gmail.com',
+  logo: 'https://alry.vercel.app/img/icon.png',
+  inLanguage: 'es',
+  publisher: { '@id': 'https://www.liriun-ux.tecnologia.bo/#organization' },
+ parentOrganization: { "@id": "https://www.liriun-ux.tecnologia.bo/#organization" }
+}
   return (
 
     <html
@@ -55,31 +81,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         className={`${displayFont.variable} ${sansFont.variable} ${serifFont.variable}`}
     >
         <head>
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  '@context': 'https://schema.org',
-                  '@type': 'Organization',
-                  name: 'LIRIUN-UX',
-                  url: 'https://www.liriun-ux.tecnologia.bo',
-                  description: 'Agencia de diseño y desarrollo web en La Paz/El Alto, Bolivia.',
-                }),
-              }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  '@context': 'https://schema.org',
-                  '@type': 'WebSite',
-                  name: 'ALRY',
-                  url: 'https://alry.vercel.app',
-                  inLanguage: 'es',
-                  publisher: { '@type': 'Organization', name: 'LIRIUN-UX' },
-                }),
-              }}
-            />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         </head>
       <body className="">{children}</body>
     </html>
