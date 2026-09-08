@@ -17,9 +17,9 @@ export default function ResTiktok() {
             height={80}
           />
 
-          <h1 className="res-tiktok--title display">
+          <h2 className="res-tiktok--title display">
             TikTok
-          </h1>
+          </h2>
 
         </div>
 

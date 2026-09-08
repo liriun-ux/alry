@@ -10,9 +10,9 @@ export default function ResAgentIa() {
         {/* PARTE IZQUIERDA */}
         <div className="res-agent-ia--left">
 
-          <h1 className="res-agent-ia--title display">
+          <h2 className="res-agent-ia--title display">
             Agente IA
-          </h1>
+          </h2>
 
           <div className="res-agent-ia--icons">
 

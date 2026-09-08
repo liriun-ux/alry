@@ -10,9 +10,9 @@ export default function ResSiteWeb() {
         {/* PARTE IZQUIERDA */}
         <div className="res-siteweb--left">
 
-          <h1 className="res-siteweb--title display">
+          <h2 className="res-siteweb--title display">
             SITIO-WEB
-          </h1>
+          </h2>
 
           <div className="res-siteweb--concepts">
 

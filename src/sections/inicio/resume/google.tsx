@@ -10,7 +10,7 @@ export default function ResGoogle() {
 
 
         {/* ICONO + TÍTULO */}
-        <h1 className="res-google--title display">
+        <h2 className="res-google--title display">
 
           <Image
             className="res-google--icon"
@@ -24,7 +24,7 @@ export default function ResGoogle() {
             Google
           </span>
 
-        </h1>
+        </h2>
         <Description className="res-base--description" text="Ahora mismo, alguien está buscando exactamente lo que tú ofreces. La pregunta es si tu negocio aparece o si esa búsqueda termina en la competencia. Descubre cuánto puede cambiar tu negocio con solo ser encontrado."/>
         <ButtonVerMas href="/google"/>
       </div>
