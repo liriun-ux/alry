@@ -69,11 +69,11 @@ const organizationJsonLd = {
 }
 const websiteJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': 'WebSite',
   '@id': 'https://alry.vercel.app/#website',
   name: 'ALRY',
   url: 'https://alry.vercel.app',
-  description: 'Instrucciones para mejorar visivilidad en YouTube, TikTok, facebook, google, agentes-ia . Como un sitio web bien hecho ayuda a mejorar la visualizacion',
+  description:  'Guía para mejorar la visibilidad de marcas y negocios en YouTube, TikTok, Facebook, Google y sistemas de inteligencia artificial.',
   email: 'liriun.ux@gmail.com',
   logo: 'https://alry.vercel.app/img/icon.png',
   inLanguage: 'es',
