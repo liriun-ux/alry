@@ -5,8 +5,13 @@ import Header from "@/components/header";
 import ManualTitle from "@/components/manual/title"
 import ResListaNumerada from "@/components/manual/lista";
 import NavBase from "@/components/nav-base";
+import { Metadata } from "next";
 
-export default function FacebookPage() {
+export const metadata: Metadata = {
+  title: 'Algoritmo de TikTok: cómo conseguir más vistas',
+  description: 'Qué evalúa el algoritmo de TikTok: los primeros segundos, tasa de finalización, hashtags de nicho y tendencias para lograr alcance viral.',
+}
+export default function TiktokPage() {
 
 
 const items = [

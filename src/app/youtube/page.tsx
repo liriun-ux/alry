@@ -1,9 +1,15 @@
 
 import Header from "@/components/header";
-import Section from "@/components/Section";
 import ManualTitle from "@/components/manual/title"
 import ResListaNumerada from "@/components/manual/lista";
 import NavBase from "@/components/nav-base";
+
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Algoritmo de YouTube: cómo conseguir más vistas',
+  description: 'Guía completa del algoritmo de YouTube: investigación de keywords, títulos, miniaturas y retención de audiencia para lograr que tus videos sean recomendados.',
+}
 
 export default function YoutubePage() {
 

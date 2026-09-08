@@ -6,6 +6,12 @@ import ManualTitle from "@/components/manual/title"
 import ResListaNumerada from "@/components/manual/lista";
 import NavBase from "@/components/nav-base";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: 'Por qué tu negocio necesita un sitio web propio',
+  description: 'Un sitio web es la base para ser encontrado por Google, recomendado por IA y percibido como un negocio serio. Descubre por qué importa.',
+}
+
 export default function SitioWebPage() {
 
 

@@ -6,7 +6,14 @@ import ManualTitle from "@/components/manual/title"
 import ResListaNumerada from "@/components/manual/lista";
 import NavBase from "@/components/nav-base";
 
-export default function FacebookPage() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Por qué tu negocio necesita aparecer en Google',
+  description: 'Descubre por qué estar en Google Business Profile y posicionado en búsquedas es clave para que tus clientes te encuentren antes que a la competencia.',
+}
+
+export default function GooglePage() {
 
 
 const items = [

@@ -5,6 +5,13 @@ import ManualTitle from "@/components/manual/title"
 import ResListaNumerada from "@/components/manual/lista";
 import NavBase from "@/components/nav-base";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Algoritmo de Facebook: cómo aumentar tu alcance',
+  description: 'Qué premia hoy el algoritmo de Facebook: interacciones significativas, video nativo, Reels y cómo evitar penalizaciones de alcance.',
+}
+
 export default function FacebookPage() {
 
 

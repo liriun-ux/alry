@@ -7,6 +7,12 @@ import ManualTitle from "@/components/manual/title"
 import ResListaNumerada from "@/components/manual/lista";
 import NavBase from "@/components/nav-base";
 
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: 'AEO: cómo lograr que la IA recomiende tu negocio',
+  description: 'Qué es el AEO (Answer Engine Optimization) y cómo estructurar la información de tu marca para que ChatGPT, Gemini y otras IAs te recomienden.',
+}
+
 export default function AgenteIAPage() {
 
 
