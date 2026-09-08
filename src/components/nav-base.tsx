@@ -49,7 +49,7 @@ export default function NavBase() {
                   <Image
                     className="nav-base--icon"
                     src="/img/facebookDark.svg"
-                    alt=""
+                    alt="facebook de liriun-ux"
                     width={30}
                     height={30}
                   />
@@ -64,7 +64,7 @@ export default function NavBase() {
                   <Image
                     className="nav-base--icon"
                     src="/img/tiktok.svg"
-                    alt=""
+                    alt="tiktok de liriun-ux"
                     width={30}
                     height={30}
                   />
@@ -79,7 +79,7 @@ export default function NavBase() {
                   <Image
                     className="nav-base--icon"
                     src="/img/web-icon.svg"
-                    alt=""
+                    alt="Sitio web de LIRIUN-UX"
                     width={30}
                     height={30}
                   />
