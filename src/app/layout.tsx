@@ -48,14 +48,12 @@ export const metadata: Metadata = {
   },
 }
 
-import fs from "fs";
 
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
 
-const fileStats = fs.statSync(__filename);
 
-const dateModified = fileStats.mtime.toISOString().split("T")[0];
+const dateModified = "2026-09-08";
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
@@ -67,7 +65,7 @@ const organizationJsonLd = {
   description: 'Agencia de diseño y desarrollo web en La Paz/El Alto, Bolivia.',
   email: 'liriun.ux@gmail.com',
   subOrganization: { "@id": "https://alry.vercel.app/#organization" },
-  dateModified,
+ dateModified: dateModified,
 }
 const websiteJsonLd = {
   '@context': 'https://schema.org',
@@ -81,7 +79,7 @@ const websiteJsonLd = {
   inLanguage: 'es',
   publisher: { '@id': 'https://www.liriun-ux.tecnologia.bo/#organization' },
  parentOrganization: { "@id": "https://www.liriun-ux.tecnologia.bo/#organization" },
- dateModified,
+ dateModified: dateModified,
 }
   return (
 
