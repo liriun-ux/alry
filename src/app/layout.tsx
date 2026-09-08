@@ -47,8 +47,15 @@ export const metadata: Metadata = {
     follow: true,
   },
 }
+
+import fs from "fs";
+
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
 
+const fileStats = fs.statSync(__filename);
+
+const dateModified = fileStats.mtime.toISOString().split("T")[0];
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
@@ -59,7 +66,8 @@ const organizationJsonLd = {
   logo: 'https://www.liriun-ux.tecnologia.bo/images/LOGOFAVICON.png',
   description: 'Agencia de diseño y desarrollo web en La Paz/El Alto, Bolivia.',
   email: 'liriun.ux@gmail.com',
-  subOrganization: { "@id": "https://alry.vercel.app/#organization" }
+  subOrganization: { "@id": "https://alry.vercel.app/#organization" },
+  dateModified,
 }
 const websiteJsonLd = {
   '@context': 'https://schema.org',
@@ -72,7 +80,8 @@ const websiteJsonLd = {
   logo: 'https://alry.vercel.app/img/icon.png',
   inLanguage: 'es',
   publisher: { '@id': 'https://www.liriun-ux.tecnologia.bo/#organization' },
- parentOrganization: { "@id": "https://www.liriun-ux.tecnologia.bo/#organization" }
+ parentOrganization: { "@id": "https://www.liriun-ux.tecnologia.bo/#organization" },
+ dateModified,
 }
   return (
 
