@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ButtonVerMas from "@/components/button-ver-mas";
-import Resdescription from "@/components/res-description";
+import Description from "@/components/description";
 
 export default function ResAgentIa() {
   return (
@@ -41,16 +41,12 @@ export default function ResAgentIa() {
             />
 
           </div>
-
         </div>
-
 
         {/* PARTE DERECHA */}
         <div className="res-agent-ia--right">
-
-            <Resdescription text="Cada vez más personas ya no buscan en Google, le preguntan directamente a una IA. Y esa IA está recomendando negocios ahora mismo, aunque el tuyo tal vez ni siquiera figure en su radar. Descubre cómo cambiar eso."/>
+            <Description className="res-base--description" text="Cada vez más personas ya no buscan en Google, le preguntan directamente a una IA. Y esa IA está recomendando negocios ahora mismo, aunque el tuyo tal vez ni siquiera figure en su radar. Descubre cómo cambiar eso."/>
             <ButtonVerMas href="/agente-ia"/>
-
         </div>
 
       </div>

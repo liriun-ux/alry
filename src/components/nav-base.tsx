@@ -27,58 +27,72 @@ export default function NavBase() {
 
         </div>
         {/* PARTE Footer */}
-        <div className="nav-base--footer">
-            <div className="nav-base--reserve display"> © LIRIUN-UX </div>
-            <div className="nav-base--create-movil display"> creado por © LIRIUN-UX</div>
-            <div className="nav-base--icons">
-
-  <a
-    href="https://facebook"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Image
-      className="nav-base--icon"
-      src="/img/facebookDark.svg"
-      alt="facebook"
-      width={30}
-      height={30}
-    />
-  </a>
-
-  <a
-    href="https://tiktok/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Image
-      className="nav-base--icon"
-      src="/img/tiktok.svg"
-      alt="tiktok"
-      width={30}
-      height={30}
-    />
-  </a>
-
-  <a
-    href="https://www.liriun-ux.tecnologia.bo"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Image
-      className="nav-base--icon"
-      src="/img/web-icon.svg"
-      alt="site-web"
-      width={30}
-      height={30}
-    />
-  </a>
-
-</div>
-            <div className="nav-base--create display"> creado por LIRIUN-UX</div>
-        </div>
-
-      </div>
+            {/* PARTE Footer */}
+            <footer className="nav-base--footer">
+            
+              <small className="nav-base--reserve display">
+                © LIRIUN-UX
+              </small>
+            
+              <small className="nav-base--create-movil display">
+                © creado por LIRIUN-UX
+              </small>
+            
+              <nav className="nav-base--icons" aria-label="Redes sociales y sitio web">
+            
+                <a
+                  href="https://facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <Image
+                    className="nav-base--icon"
+                    src="/img/facebookDark.svg"
+                    alt=""
+                    width={30}
+                    height={30}
+                  />
+                </a>
+            
+                <a
+                  href="https://tiktok/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                >
+                  <Image
+                    className="nav-base--icon"
+                    src="/img/tiktok.svg"
+                    alt=""
+                    width={30}
+                    height={30}
+                  />
+                </a>
+            
+                <a
+                  href="https://www.liriun-ux.tecnologia.bo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sitio web de LIRIUN-UX"
+                >
+                  <Image
+                    className="nav-base--icon"
+                    src="/img/web-icon.svg"
+                    alt=""
+                    width={30}
+                    height={30}
+                  />
+                </a>
+            
+              </nav>
+            
+              <small className="nav-base--create display">
+                Creado por LIRIUN-UX
+              </small>
+            
+            </footer>
+            </div>
     </section>
   );
 }

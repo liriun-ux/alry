@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ButtonVerMas from "@/components/button-ver-mas";
-import Resdescription from "@/components/res-description";
+import Description from "@/components/description";
 export default function ResTiktok() {
   return (
     <section className="res-tiktok">
@@ -26,7 +26,7 @@ export default function ResTiktok() {
         {/* PARTE DERECHA */}
         <div className="res-tiktok--right">
 
-            <Resdescription text="En TikTok, tus primeros 3 segundos valen más que todo el resto del video junto. Conoce las señales exactas que el algoritmo evalúa para decidir si tu contenido explota o desaparece en silencio."/>
+            <Description className="res-base--description" text="En TikTok, tus primeros 3 segundos valen más que todo el resto del video junto. Conoce las señales exactas que el algoritmo evalúa para decidir si tu contenido explota o desaparece en silencio."/>
             <ButtonVerMas href="/tiktok"/>
 
         </div>

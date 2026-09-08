@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import ButtonVerMas from "@/components/button-ver-mas";
-import Resdescription from "@/components/res-description";
+import Description from "@/components/description";
 export default function ResGoogle() {
   return (
     <section className="res-google">
@@ -25,7 +25,7 @@ export default function ResGoogle() {
           </span>
 
         </h1>
-        <Resdescription text="Ahora mismo, alguien está buscando exactamente lo que tú ofreces. La pregunta es si tu negocio aparece o si esa búsqueda termina en la competencia. Descubre cuánto puede cambiar tu negocio con solo ser encontrado."/>
+        <Description className="res-base--description" text="Ahora mismo, alguien está buscando exactamente lo que tú ofreces. La pregunta es si tu negocio aparece o si esa búsqueda termina en la competencia. Descubre cuánto puede cambiar tu negocio con solo ser encontrado."/>
         <ButtonVerMas href="/google"/>
       </div>
     </section>

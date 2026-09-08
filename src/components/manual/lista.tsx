@@ -15,9 +15,9 @@ export default function ResListaNumerada({
   className = "",
 }: ResListaNumeradaProps) {
   return (
-    <div className={`res-lista-numerada ${className}`}>
+    <ul className={`res-lista-numerada ${className}`}>
       {items.map((item, index) => (
-        <div className="res-lista-numerada--item" key={index}>
+        <li className="res-lista-numerada--item" key={index}>
 
           <div className="res-lista-numerada--header">
 
@@ -30,8 +30,8 @@ export default function ResListaNumerada({
             {item.descripcion}
           </p>
 
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

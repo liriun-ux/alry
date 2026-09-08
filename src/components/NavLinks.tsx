@@ -8,48 +8,34 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <div className="nav-base--left">
-      <Link href="/">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/" ? "active" : ""}`}>
+    <nav className="nav-base--left" aria-label="Navegación principal">
+      <Link href="/" className={`res-base--button nav-base-section-button ${pathname === "/" ? "active" : ""}`}>
           inicio
-        </div>
       </Link>
 
-      <Link href="/youtube">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/youtube" ? "active" : ""}`}>
+      <Link href="/youtube" className={`res-base--button nav-base-section-button ${pathname === "/youtube" ? "active" : ""}`}>
           youtube
-        </div>
       </Link>
 
-      <Link href="/tiktok">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/tiktok" ? "active" : ""}`}>
+      <Link href="/tiktok" className={`res-base--button nav-base-section-button ${pathname === "/tiktok" ? "active" : ""}`}>
           tiktok
-        </div>
       </Link>
 
-      <Link href="/facebook">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/facebook" ? "active" : ""}`}>
+      <Link href="/facebook" className={`res-base--button nav-base-section-button ${pathname === "/facebook" ? "active" : ""}`}>
           facebook
-        </div>
       </Link>
 
-      <Link href="/google">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/google" ? "active" : ""}`}>
+      <Link href="/google" className={`res-base--button nav-base-section-button ${pathname === "/google" ? "active" : ""}`}>
           google
-        </div>
       </Link>
 
-      <Link href="/agente-ia">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/agente-ia" ? "active" : ""}`}>
+      <Link href="/agente-ia" className={`res-base--button nav-base-section-button ${pathname === "/agente-ia" ? "active" : ""}`}>
           agente ia
-        </div>
       </Link>
 
-      <Link href="/sitio-web">
-        <div className={`res-base--button nav-base-section-button ${pathname === "/sitio-web" ? "active" : ""}`}>
+      <Link href="/sitio-web" className={`res-base--button nav-base-section-button ${pathname === "/sitio-web" ? "active" : ""}`}>
           sitio web
-        </div>
       </Link>
-    </div>
+    </nav>
   );
 }
