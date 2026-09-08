@@ -14,7 +14,29 @@ export const metadata: Metadata = {
 }
 
 export default function AgenteIAPage() {
-
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'AEO: cómo lograr que la IA recomiende tu negocio',
+  description: 'Qué es el AEO (Answer Engine Optimization) y cómo estructurar tu información para que las IAs te recomienden.',
+  publisher: { '@type': 'Organization', name: 'LIRIUN-UX' },
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Los agentes de IA ya recomiendan negocios' },
+      { '@type': 'ListItem', position: 2, name: 'AEO: el nuevo SEO, pero para inteligencias artificiales' },
+      { '@type': 'ListItem', position: 3, name: 'Los precios y datos deben estar donde la IA los pueda leer' },
+      { '@type': 'ListItem', position: 4, name: 'La coherencia de marca en todos lados importa' },
+      { '@type': 'ListItem', position: 5, name: 'Las reseñas alimentan directamente a la IA' },
+      { '@type': 'ListItem', position: 6, name: 'Ser la fuente citada, no solo un resultado más' },
+      { '@type': 'ListItem', position: 7, name: 'Contenido claro y directo, la nueva moneda de confianza' },
+      { '@type': 'ListItem', position: 8, name: 'Quedar fuera de las respuestas de IA es quedar fuera del futuro' },
+      { '@type': 'ListItem', position: 9, name: 'Una respuesta de IA puede valer más que diez anuncios' },
+      { '@type': 'ListItem', position: 10, name: 'Los early movers tienen una ventaja temporal enorme' },
+      { '@type': 'ListItem', position: 11, name: 'No se trata de estar en todos lados, sino de ser encontrado' },
+    ],
+  },
+}
 
 const items = [
   {
@@ -65,6 +87,7 @@ const items = [
 
   return (
       <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header/>
         <main>
             <section className="manual-section" id="manual-algoritmo-youtube">

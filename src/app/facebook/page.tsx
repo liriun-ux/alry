@@ -13,7 +13,26 @@ export const metadata: Metadata = {
 }
 
 export default function FacebookPage() {
-
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Cómo aumentar tu alcance en Facebook',
+  description: 'Guía de optimización para el algoritmo de Facebook e interacciones significativas.',
+  step: [
+    { '@type': 'HowToStep', name: 'Tiempo de permanencia', text: 'Diseñar publicaciones que inviten a detenerse a leer o mirar.' },
+    { '@type': 'HowToStep', name: 'Interacciones significativas', text: 'Priorizar comentarios reales y conversación sobre likes pasivos.' },
+    { '@type': 'HowToStep', name: 'Video nativo y Reels', text: 'Subir video directo a la plataforma, priorizando el formato Reels.' },
+    { '@type': 'HowToStep', name: 'Evitar el engagement bait', text: 'No usar tácticas artificiales tipo "etiqueta a 5 amigos".' },
+    { '@type': 'HowToStep', name: 'Frecuencia y consistencia', text: 'Mantener un calendario regular sin saturar ni desaparecer.' },
+    { '@type': 'HowToStep', name: 'Retener usuarios dentro de la plataforma', text: 'Reducir enlaces externos directos en el cuerpo de la publicación.' },
+    { '@type': 'HowToStep', name: 'Relevancia por audiencia', text: 'Segmentar tono y temática según el historial de interacción.' },
+    { '@type': 'HowToStep', name: 'Velocidad de reacción inicial', text: 'Generar interacción en los primeros 30-60 minutos tras publicar.' },
+    { '@type': 'HowToStep', name: 'Uso de grupos de Facebook', text: 'Complementar la página con presencia en grupos relevantes del nicho.' },
+    { '@type': 'HowToStep', name: 'Calidad visual para feed móvil', text: 'Optimizar dimensiones para el feed móvil, mayoría del tráfico.' },
+    { '@type': 'HowToStep', name: 'Evitar señales negativas', text: 'Minimizar "ocultar publicación" y marcas de spam.' },
+    { '@type': 'HowToStep', name: 'Análisis en Meta Business Suite', text: 'Monitorear alcance, interacción y retención de video.' },
+  ],
+}
 
 const items = [
   {
@@ -68,6 +87,7 @@ const items = [
 
   return (
       <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header/>
         <main>
             <section className="manual-section" id="manual-algoritmo-youtube">

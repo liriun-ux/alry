@@ -12,6 +12,25 @@ export const metadata: Metadata = {
 }
 
 export default function YoutubePage() {
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Cómo conseguir más vistas en YouTube',
+  description: 'Guía de optimización para el algoritmo de recomendaciones de YouTube.',
+  step: [
+    { '@type': 'HowToStep', name: 'Investigación de palabras clave', text: 'Identificar términos con volumen de búsqueda real y baja competencia.' },
+    { '@type': 'HowToStep', name: 'Optimización del título', text: 'Combinar la keyword principal con un gancho, dentro de 60 caracteres.' },
+    { '@type': 'HowToStep', name: 'Descripción estratégica', text: 'Escribir 200-300 palabras con la keyword en las primeras líneas.' },
+    { '@type': 'HowToStep', name: 'Miniaturas de alto impacto', text: 'Diseñar thumbnails con alto contraste y tipografía legible.' },
+    { '@type': 'HowToStep', name: 'Retención de audiencia', text: 'Estructurar un gancho fuerte en los primeros 15 segundos.' },
+    { '@type': 'HowToStep', name: 'Etiquetas relevantes', text: 'Usar 5 a 8 tags combinando términos amplios y long-tail.' },
+    { '@type': 'HowToStep', name: 'Playlists y estructura', text: 'Organizar videos por temática para aumentar el tiempo por sesión.' },
+    { '@type': 'HowToStep', name: 'Consistencia de publicación', text: 'Mantener un calendario constante de subida.' },
+    { '@type': 'HowToStep', name: 'Interacción y señales sociales', text: 'Fomentar comentarios y respuestas en la primera hora.' },
+    { '@type': 'HowToStep', name: 'Análisis de métricas', text: 'Revisar CTR, retención y fuentes de tráfico en YouTube Studio.' },
+  ],
+}
+
 
 
 const items = [
@@ -59,6 +78,7 @@ const items = [
 
   return (
       <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header/>
         <main>
             <section className="manual-section" id="manual-algoritmo-youtube">

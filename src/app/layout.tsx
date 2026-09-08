@@ -49,10 +49,38 @@ export const metadata: Metadata = {
 }
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
+
     <html
       lang="es"
         className={`${displayFont.variable} ${sansFont.variable} ${serifFont.variable}`}
     >
+        <head>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  '@context': 'https://schema.org',
+                  '@type': 'Organization',
+                  name: 'LIRIUN-UX',
+                  url: 'https://www.liriun-ux.tecnologia.bo',
+                  description: 'Agencia de diseño y desarrollo web en La Paz/El Alto, Bolivia.',
+                }),
+              }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  '@context': 'https://schema.org',
+                  '@type': 'WebSite',
+                  name: 'ALRY',
+                  url: 'https://alry.vercel.app',
+                  inLanguage: 'es',
+                  publisher: { '@type': 'Organization', name: 'LIRIUN-UX' },
+                }),
+              }}
+            />
+        </head>
       <body className="">{children}</body>
     </html>
   );

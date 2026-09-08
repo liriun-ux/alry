@@ -13,7 +13,29 @@ export const metadata: Metadata = {
 }
 
 export default function SitioWebPage() {
-
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Por qué tu negocio necesita un sitio web propio',
+  description: 'Un sitio web es la base para ser encontrado por Google, recomendado por IA y percibido como un negocio serio.',
+  publisher: { '@type': 'Organization', name: 'LIRIUN-UX' },
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Tu vitrina que nunca cierra' },
+      { '@type': 'ListItem', position: 2, name: 'La diferencia entre existir y ser encontrado' },
+      { '@type': 'ListItem', position: 3, name: 'Un solo lugar con toda la información, siempre actualizada' },
+      { '@type': 'ListItem', position: 4, name: 'La puerta de entrada que Google necesita para recomendarte' },
+      { '@type': 'ListItem', position: 5, name: 'El pasaporte para ser recomendado por la IA' },
+      { '@type': 'ListItem', position: 6, name: 'Un activo que te pertenece, no que alquilas' },
+      { '@type': 'ListItem', position: 7, name: 'La primera impresión antes de cualquier contacto humano' },
+      { '@type': 'ListItem', position: 8, name: 'Contacto siempre a la vista' },
+      { '@type': 'ListItem', position: 9, name: 'Mostrar el catálogo completo sin límite de espacio' },
+      { '@type': 'ListItem', position: 10, name: 'Construir una reputación que se puede mostrar' },
+      { '@type': 'ListItem', position: 11, name: 'El punto de encuentro entre todos tus canales' },
+    ],
+  },
+}
 
 const items = [
   {
@@ -64,6 +86,7 @@ const items = [
 
   return (
       <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header/>
         <main>
             <section className="manual-section" id="manual-algoritmo-youtube">

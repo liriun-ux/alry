@@ -12,7 +12,26 @@ export const metadata: Metadata = {
   description: 'Qué evalúa el algoritmo de TikTok: los primeros segundos, tasa de finalización, hashtags de nicho y tendencias para lograr alcance viral.',
 }
 export default function TiktokPage() {
-
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Cómo conseguir más vistas en TikTok',
+  description: 'Guía de optimización para el algoritmo de recomendaciones de TikTok.',
+  step: [
+    { '@type': 'HowToStep', name: 'Los primeros 3 segundos', text: 'Captar atención inmediata para evitar el swipe temprano.' },
+    { '@type': 'HowToStep', name: 'Tasa de finalización', text: 'Videos cortos (15-34 seg) que se ven completos o en loop.' },
+    { '@type': 'HowToStep', name: 'Uso estratégico de sonidos', text: 'Audios en tendencia que impulsan el alcance en For You.' },
+    { '@type': 'HowToStep', name: 'Hashtags relevantes y de nicho', text: 'Combinar 3 a 5 hashtags amplios y específicos del nicho.' },
+    { '@type': 'HowToStep', name: 'Interacción temprana', text: 'Publicar en horarios de mayor actividad y fomentar comentarios en la primera hora.' },
+    { '@type': 'HowToStep', name: 'Formato vertical y calidad nativa', text: 'Producir en 9:16 sin marcas de agua de otras plataformas.' },
+    { '@type': 'HowToStep', name: 'Consistencia de publicación', text: 'Mínimo 3 a 5 videos por semana en cuentas en crecimiento.' },
+    { '@type': 'HowToStep', name: 'Texto en pantalla y subtítulos', text: 'Incorporar texto superpuesto para mejorar retención y contexto.' },
+    { '@type': 'HowToStep', name: 'Señales de valor agregado', text: 'Contenido que motive guardados y compartidos por mensaje directo.' },
+    { '@type': 'HowToStep', name: 'Coherencia temática de la cuenta', text: 'Mantener una línea temática clara y reconocible.' },
+    { '@type': 'HowToStep', name: 'Aprovechamiento de tendencias', text: 'Monitorear diariamente sonidos y retos en ascenso.' },
+    { '@type': 'HowToStep', name: 'Análisis en TikTok Studio', text: 'Revisar tiempo de reproducción, alcance y tráfico por hashtag.' },
+  ],
+}
 
 const items = [
   {
@@ -67,6 +86,7 @@ const items = [
 
   return (
       <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <Header/>
         <main>
             <section className="manual-section" id="manual-algoritmo-youtube">
